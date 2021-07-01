@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>travels</title>
+    <style>
+        body {
+            background-image:url("po.jpg");
+            
+            background-size:cover;
+            
+        }
+        header{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0, 0,0,0.5);
+        }
+        .part-two {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-60%,-20%);
+            /*text-align:center;*/
+            box-sizing:content-box;
+            font-size:medium;
+            background-color: rgba(255, 255, 255,0.3);
+            width: 1000px;
+            height: 550px;
+            padding: 20px;
+          /*  margin-top:20px;*/
+        }
+        /*h1 {
+            text-align:center;
+       font-size:large;
+       padding:10px;
+       margin:10px;
+       background-color:rgba(255, 255, 255,0.3);
+       width:auto;
+       height:auto;
+    }*/
+        .textover-image {
+            position:relative;
+         width:300px;
+         height:300px;
+         float:right;
+         margin:4px;
+         /*background-size:100%;*/
+         background-repeat:no-repeat;
+         transition:0.5s;
+         background-position:center;
+
+
+        }
+            .textover-image:hover {
+                background-size:110%;
+            }
+            .textover-image:after {
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                word-wrap:break-word;
+                overflow:hidden;
+                background-color:rgba(0,0,0,0.6);
+                color:#fff;
+                padding:8px;
+                opacity:0;
+                content:attr(data-text);
+                transition:0.5s;
+            }
+            .textover-image:hover:after {
+                opacity:1;
+            }
+        /*nav {
+            box-sizing:content-box;
+            font-size:medium;
+            background-color: rgba(58, 79, 94,0.7);
+            width: 1300px;
+            height:200px;
+            padding:10px;
+        }*/
+        
+        a{
+          color:white;
+         
+      }
+       h1{
+           position: absolute;
+           color: #ffd800;
+           padding: 3px;
+           float: left;
+           margin-left: 2px;
+           margin-top: 10px;
+           font-size: 30px;
+       }
+       ul{
+           width:auto;
+           float: right;
+           margin-top: 8px;
+       }
+       li{
+           display: inline-block;
+           padding: 15px 30px;
+           color: #fff;
+
+       }
+       ul li:hover{
+           background-color: darkgray;
+           transition: 0.5s;
+       }
+       span{
+           color: #fff;
+       }
+        
+        p {
+            font-size:30px;
+        }
+      .nav-links a{
+          color: #fff;
+          font-weight: bold;
+          font-size: 14px;
+          text-decoration: none;
+      }
+        
+       
+        
+       
+    </style>
+</head>
+<body>
+        <nav>
+               <header>
+                   <h1>FCIS <span>ft.com</span></h1>
+                   <ul class="nav-links">
+                       <li><a href="file:///D:/desctop/trainning%20project/wep%20page.html"> home</a></li>
+                       <li> <a href="file:///D:/desctop/trainning%20project/forming.html"> booking form </a></li>
+                       <li><a href="file:///D:/desctop/trainning%20project/project.html"> log out</a></li>
+                       
+                   </ul>
+               </header>
+            </nav>
+            <p class="word">this week's top travel deals from cairo...</p>
+    <div class="part-two">
+    
+    <div class="textover-image"
+        style="background-image:url(hargada.jpg)"
+        data-text="A JOURNY TO GHARDAHA..coral reefs and submarine based cruises mark the city of al_ghradha
+        how great it is to walk in it at night ,ride on wheels and camil..it's a five star hotel..the trip involves
+         breakfast,lunch,dinner..paying per person 800 hundred.. and for youngest is less than 300 pounds.  ">
+            
+     
+    </div>
+        
+        
+     <div class="textover-image"
+        style="background-image:url(marsa.jpg)"
+         data-text=" A JOURNY TO MARSA MATROH..this trip is distinactive ..the hotel involves a water park for adults and children..ther are 
+         concerts daily ..marsa matrouh is distinguished by its wonderful weather ..you can take photos and celebrate...">
+       
+    </div>
+     <div class="textover-image"
+        style="background-image:url(sharm.jpg)"
+         data-text="A JOURNY TO SHARM EL SHEKH..the trip involves breakfast,lunch,..paying per person 400 hundred
+          ..for youngstters less than 150pounds..it's afive star hotel..hotel involves shopping mall and swimming pool
+           there are children's garden..and night parties.. THE HOTEL across from the sea can see beautifullp places... ">
+       
+    </div>
+     <div class="textover-image"
+        style="background-image:url(marsa3lm.jpg)"
+         data-text="A JOURNY TOMARSA ALAM..the trip involves breakfast,lunch,dinner..paying per person 500 hundred 
+         ..for youngstters less than 250 pounds..there's anightclub and swimming pool THE HOTEL across from the sea 
+         can see beautifullp places.. there are shops, restaurants and night parties ">
+       
+    </div>
+     <div class="textover-image"
+        style="background-image:url(dhp.jpg)"
+         data-text="A JOURNY TO DAHAB..the trip involves breakfast,lunch,dinner..paying per person 300 hundred ..
+         for youngstters less than 150pounds..there's anightclub and swimming pool and there's also atrips to te sea and camel ride ">
+       
+    </div>
+     <div class="textover-image"
+        style="background-image:url(elainso5na.jpg)"
+         data-text="A JOURNY TO ELAEN ELSOKHNA..the trip involves breakfast,lunch,dinner..paying per person 700 hundred ..
+         for youngstters less than 300 pounds..there's swimming pool THE HOTEL across from the sea can see beautifullp places..there's also atrips to te sea and camel ride ">
+       
+    </div>
+        
+    
+</div>
+</body>
+</html>

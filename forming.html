@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>forming</title>
+    <style>
+          body {
+            background-image:url("po.jpg");
+            background-size:cover;
+        }
+          .input-output {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align:center;
+            box-sizing: border-box;
+            font-size:x-large;
+            background-color: rgba(0, 0, 0,0.3);
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+            /*margin:150px;*/
+            padding-top:50px;
+            margin-top: 20px;
+         }
+          .input-output p {
+                margin:0;
+                padding:0;
+                font-weight:bold;
+                color:#fff;
+
+            }
+            .input-output input, selcted {
+                margin-bottom:10px;
+                width:auto;
+            }
+        h3 {
+            margin:0;
+            padding:0;
+            font-weight:bold;
+            color:#fff;
+        }
+        a{
+          color:white;
+         
+      }
+       h1{
+           position: absolute;
+           color: #ffd800;
+           padding: 3px;
+           float: left;
+           margin-left: 2px;
+           margin-top: 10px;
+           font-size: 30px;
+       }
+       ul{
+           width:auto;
+           float: right;
+           margin-top: 8px;
+       }
+       li{
+           display: inline-block;
+           padding: 15px 30px;
+           color: #fff;
+
+       }
+       ul li:hover{
+           background-color: darkgray;
+           transition: 0.5s;
+       }
+       span{
+           color: #fff;
+       }
+       .nav-links a{
+          color: #fff;
+          font-weight: bold;
+          font-size: 14px;
+          text-decoration: none;
+      }
+      header{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0, 0,0,0.5);
+        }
+       
+    </style>
+    <script>
+        function booki(){
+            alert("you just booking to a trip we hope you to enjoy your trip")
+        }
+    
+    </script>
+</head>
+<body>
+        <nav>
+                <header>
+                        <h1>FCIS <span>ft.com</span></h1>
+                        <ul class="nav-links">
+                            <li><a href="file:///D:/desctop/trainning%20project/wep%20page.html"> home</a></li>
+                            <li><a href="file:///D:/desctop/trainning%20project/project.html"> log out</a></li>
+                            
+                        </ul>
+                    </header>
+            </nav>
+
+    <div class="input-output">
+         <h3>booking form</h3>
+        <form action="">
+            <p>from</p>
+                 <select>
+                    <option value="">cairo </option>
+                    <option value="">Aswan </option>
+                    <option value="">Kaliobeya </option>
+                    
+                    <option value="">Alexandria </option>
+                </select>
+            <p>to</p>
+            <select>
+                    <option value="">Hurghada </option>
+                    <option value="">Marsa Matrouh </option>
+                    <option value="">Sharm El-Shaikh </option>
+                    <option value="">Mursi Alam </option>
+                    <option value="">Dahab </option>
+                    <option value="">Alexandria </option>
+               </select>
+            <p>date of travel</p>
+            <input type="date"  name="" id="Date1" />
+            <p>date of return</p>
+            <input type="date" name="" id="Date2" />
+            <p>person</p>
+ <select>
+     <option value="">one </option>
+     <option value="">two </option>
+     <option value="">three </option>
+     <option value="">four </option>
+     <option value="">five </option>
+</select>
+            <input type="submit" value="book"  onclick="booki()"/>
+        </form>
+    </div>
+</body>
+</html>

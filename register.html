@@ -1,0 +1,170 @@
+
+<html> 
+    <head>
+   <title>
+   sing in
+   </title>
+<style>
+    body{
+        background-image: url("po.jpg");
+        background-repeat:round;
+        background-size:cover;
+    }
+    h1,h4{
+        color:black;
+        text-align: center;
+    }
+    #fcis{
+       color: white;
+       font-size: 30px;
+       text-align: center;
+    }
+    h1.greaterOne{
+        /*font-family: fantasy;*/
+        font-size: 500;
+        
+        
+    }
+    div{
+        text-align-last: center;
+        margin:150px;
+        background-color: rgba(0, 0,0,0.5);
+       
+    }
+    label{
+        color:white;
+        
+    }
+    input{
+        
+         border-top-left-radius: 500px;
+        border-bottom-right-radius: 500px;
+        
+        
+    }
+    a{
+          color:white;
+         
+      }
+       h1{
+           position: absolute;
+           color: #ffd800;
+           padding: 3px;
+           float: left;
+           margin-left: 2px;
+           margin-top: 10px;
+           font-size: 30px;
+       }
+       ul{
+           width:auto;
+           float: right;
+           margin-top: 8px;
+       }
+       li{
+           display: inline-block;
+           padding: 15px 30px;
+           color: #fff;
+
+       }
+       ul li:hover{
+           background-color: darkgray;
+           transition: 0.5s;
+       }
+       span{
+           color: #fff;
+       }
+       .nav-links a{
+          color: #fff;
+          font-weight: bold;
+          font-size: 14px;
+          text-decoration: none;
+      }
+      header{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0, 0,0,0.5);
+        }
+        h2{
+            color: #fff;
+        }
+       
+    /*<marquee direction="up"><h1 id="greaterOne">L3M</h1></marquee>*/
+
+  
+</style>
+<script>
+    function validateform(){
+        var valid=true;
+                        if(document.inputform.email.value==""){
+                            alert("email is emptey");
+                            valid=false;
+                        }
+                        else if(document.inputform.passworde.value==""){
+                            alert("password is emptey");
+                            valid=false;
+                        }
+                        else if(document.inputform.firstname.value==""){
+                            alert("first name is empty")
+                            valid=false;
+                        }
+                        
+                      
+                        
+                        else
+                        {
+                            if(document.inputform.email.value.indexOf("@")==-1&&document.inputform.email.value.indexOf(".")==-1){
+                                alert("please enter a valid email,like: lsfgt@yahoo.com");
+                                valid=false;
+                            }
+                            else if(document.inputform.passworde.value!=document.inputform.confirmpassword.value){
+                                alert("wrong password");
+                                valid=false;
+                            }
+                     
+                            else{
+                                window.open("file:///D:/desctop/trainning%20project/wep%20page.html")
+                            }
+                        }
+                        return valid;
+    }
+
+
+</script>
+</head>
+
+  <body>
+        <nav>
+                <header>
+                        <h1>FCIS <span>ft.com</span></h1>
+                        <ul class="nav-links">
+                            <li><a href="file:///C:/Users/iP/Desktop/wep%20page.html"> about us </a></li>
+                            <li><a href="file:///D:/desctop/trainning%20project/project.html"> log in</a></li>
+                           
+                        </ul>
+                    </header>
+            </nav>
+      
+ <div>
+ <h2 id="h1f" >Required Information</h2><br/>
+<form name="inputform" onsubmit="return validateform()">
+<label>First Name</label> <input type="text" required id="firstname"/> 
+<label>last Name</label><input type="text" required  id="lastname"/><br/>      
+  <label>  E-mail  </label><input type="e-mail" required  id="email"/><br/>
+<label>Password </label><input type="password" required  id ="passworde"/> <br/>
+<label>Confirm Password </label><input type="password" required  id ="confirmpassword"/> 
+    <h4 style="color: #fff">Your Birthdate</h4>
+    <input type="date"  name="" id="Date1" />
+ <br/>
+ 
+    <label>Male </label> <input type="radio" name="reading" required value="0" />  
+    <label> female  </label><input type="radio" name="reading" required value="0" /> <br/>
+
+    <input type= "submit" value="Register" id="button" />
+
+</form>
+
+
+      
+</body>
+  
+</html>

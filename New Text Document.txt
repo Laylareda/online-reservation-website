@@ -1,0 +1,23 @@
+if(finalscore>=15000 &&moves>=0){
+			levelcompleted.setPosition(90,110);
+			app.draw(text4);
+		level=true;
+		finalscore+=moves*1000;
+		moves=0;
+		levl1=true;
+		
+		
+		
+		//Levels();
+		
+		//soundcompleted.play();
+		}
+
+		else if(finalscore<15000 &&moves==0){
+		
+			level=false;
+			gameover.setPosition(90,170);
+			app.draw(text5);
+			//Levels();
+			//soundfaild.play();
+			//app.draw(gameover);

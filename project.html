@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title> log in</title>
+        <link rel="design" type="text/css" href="design.css">
+        <style>
+        body{
+            background-image: url("po.jpg");
+            background-size:cover;
+      }
+      header{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0, 0,0,0.5);
+        }
+
+      a{
+          color:white;
+         
+      }
+       h1{
+           position: absolute;
+           color: #ffd800;
+           padding: 3px;
+           float: left;
+           margin-left: 2px;
+           margin-top: 10px;
+           font-size: 30px;
+       }
+       
+      table{
+          border: none;
+      }
+      form{
+          border-width: 2px;
+          border-radius: 8px;
+          
+    
+          padding: 50px 125px 90px 80px;
+          margin: 150px;
+          text-align: center;
+      }
+      ul{
+           width:auto;
+           float: right;
+           margin-top: 8px;
+       }
+       li{
+           display: inline-block;
+           padding: 15px 30px;
+           color: #fff;
+
+       }
+       ul li:hover{
+           background-color: darkgray;
+           transition: 0.5s;
+       }
+       span{
+           color: #fff;
+       }
+     
+      div{
+        background-color: rgba(0, 0,0,0.5);
+        color: #fff;
+      }
+      #login{
+          color: black;
+      }
+      .nav-links a{
+          color: #fff;
+          font-weight: bold;
+          font-size: 14px;
+          text-decoration: none;
+      }
+
+        </style>
+        <script>
+            
+                    function validateform(){
+                        var valid=true;
+                        if(document.inputform.email.value==""){
+                            alert("email is emptey");
+                            valid=false;
+                        }
+                        else if(document.inputform.passworde.value==""){
+                            alert("password is emptey");
+                            valid=false;
+                        }
+                        else
+                        {
+                            if(document.inputform.email.value.indexOf("@")==-1&&document.inputform.email.value.indexOf(".")==-1){
+                                alert("please enter a valid email,like: lsfgt@yahoo.com");
+                                valid=false;
+                            }
+                            else{
+                                window.open("file:///D:/desctop/trainning%20project/wep%20page.html")
+                            }
+                        }
+                        return valid;
+                    }
+                
+                
+                
+              
+        
+        </script>
+    </head>
+
+    <body>
+            <nav>
+                    <header>
+                            <h1>FCIS <span>ft.com</span></h1>
+                            <ul class="nav-links">
+                                <li><a href="file:///C:/Users/iP/Desktop/wep%20page.html"> about us </a></li>
+                                <li> <a href="file:///D:/desctop/trainning%20project/register.html"> registration </a></li>
+                            </ul>
+                        </header>
+    </nav>
+   
+      <form name="inputform" onsubmit="return validateform()">
+            <div >
+                <h2> login form</h3>
+                email  <br>
+                <input type="text"  autofocus id="email"> 
+                <br>
+                password <br> 
+                <input type ="password" autofocus id="passworde"> 
+                <br> 
+                <input type="submit" value="login"  > 
+                <br>
+                <a href="file:///D:/desctop/trainning%20project/adminlogin.html?email=laylla%40gmail.com&passworde=123456" id="login" style="color: #fff"> log in as a admin</a>
+            
+            </div>
+         </form>
+    
+
+
+
+
+    </body>
+</html>

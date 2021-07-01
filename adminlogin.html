@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title> admin log in</title>
+        <style>
+                body{
+            margin: 0px;
+            border: 0px;
+            background-image: url("po.jpg");
+            background-size:cover; 
+        }
+        
+              a{
+                  color:white;
+              }
+              h1{
+                font-size: 30px;
+                color: white;
+                text-align: center;
+              }
+               
+              table{
+                  border: none;
+              }
+              form{
+                  border-width: 2px;
+                  border-radius: 8px;
+                  
+            
+                  padding: 50px 125px 90px 80px;
+                  margin: 150px;
+                  text-align: center;
+              }
+             
+              div{
+                  background-color: rgba(0, 0, 0,0.5);
+                  color: #fff;
+              }
+              #login{
+                  color: black;
+              }
+              #header{
+            width: 100%;
+            height: 120px;
+            background-color:rgba(0, 0, 0,0.5);
+            /*background:black;*/
+            color: white; 
+              }
+              #adminlogo{
+            background: white;
+            border-radius: 50px;
+        }
+        
+                </style>
+                <script>
+                    function validateform(){
+                        var valid=true;
+                        if(document.inputform.email.value==""){
+                            alert("email is emptey");
+                            valid=false;
+                        }
+                        else if(document.inputform.passworde.value==""){
+                            alert("password is emptey");
+                            valid=false;
+                        }
+                        else
+                        {
+                            if(document.inputform.email.value.indexOf("@")==-1&&document.inputform.email.value.indexOf(".")==-1){
+                                alert("please enter a valid email,like: lsfgt@yahoo.com");
+                                valid=false;
+                            }
+                            else{
+                                window.open("file:///D:/desctop/trainning%20project/admin.html")
+                            }
+                        }
+                        return valid;
+                    }
+                
+                
+                
+                </script>
+    </head>
+
+    <body>
+          
+        <div id ="header">
+                <center>
+                        <img src="p.png" alt="admin image" id="adminlogo">
+                        <br>
+                        
+                    </center>
+
+        </div>
+    
+   
+      <form name="inputform" onsubmit="return validateform()">
+            <div>
+                <h2 style="color: #fff"> login form</h2>
+                admin email  <br>
+                <input type="text"  autofocus name="email" > 
+                <br>
+                password <br> 
+                <input type ="password" autofocus name="passworde" > 
+                <br>
+                <input type="submit" value="login"  >
+                <br>
+               
+            
+            </div>
+         </form>
+    
+
+
+
+
+    </body>
+</html>
